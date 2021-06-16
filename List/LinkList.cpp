@@ -3,6 +3,7 @@
 //
 
 #include <stdlib.h>
+#include <cstdio>
 
 typedef struct LNode {
     int data;
@@ -103,6 +104,37 @@ LNode *LocateElem(LinkList L, int e) {
     return p;
 }
 
+LinkList InsertTail(LinkList &l) {
+    int x;
+    l = (LinkList) malloc(sizeof(LNode));
+    LNode *s, *r = l;
+    scanf("%d", &x);
+    while (x != 9999) {
+        s = (LNode *) malloc(sizeof(LNode));
+        s->data = x;
+        r->next = s;
+        r = s;
+        scanf("%d", &x);
+    }
+    r->next = NULL;
+    return l;
+}
+
+LinkList headInsert(LinkList &l) {
+    LNode *s;
+    int x;
+    l->next = NULL;
+    scanf("%d", &x);
+    while (x != 9999) {
+        s = (LNode *) malloc(sizeof(LNode));
+        s->data = x;
+        s->next = l->next;
+        l->next = s;
+        scanf("%d", &x);
+    }
+    return l;
+}
+
 bool insertListWithHead(LinkList &L, int i, int e) {
     //位置不合法
     if (i < 1)return false;
@@ -173,3 +205,12 @@ void test() {
     Init(L);
 
 };
+
+int main() {
+    LinkList l;
+    InsertTail(l);
+    while (l != NULL) {
+        printf("%d", l->data);
+        l = l->next;
+    }
+}

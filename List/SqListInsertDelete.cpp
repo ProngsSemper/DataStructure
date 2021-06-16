@@ -41,7 +41,4 @@ bool Delete(SqList &L, int t, int &e) {
     return true;
 }
 
-int main(){
-
-};
 
