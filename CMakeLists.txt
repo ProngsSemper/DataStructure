@@ -3,4 +3,4 @@ project(data_structure)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(data_structure List/SqListInsertDelete.cpp List/SqlListSearch.cpp List/LinkList.cpp List/LinkList.h)
+add_executable(data_structure List/SqListInsertDelete.cpp List/SqlListSearch.cpp List/LinkList.cpp List/DNode.cpp)
