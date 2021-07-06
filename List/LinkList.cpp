@@ -16,6 +16,14 @@ bool Init(LinkList &L) {
     return true;
 }
 
+//循环链表
+bool initCycleList(LinkList &l) {
+    l = (LNode *) malloc(sizeof(LNode));
+    if (l == NULL)return false;
+    l->next = l;
+    return true;
+}
+
 bool EmptyList(LinkList L) {
     return L == NULL;
 }
