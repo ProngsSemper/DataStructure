@@ -2,7 +2,7 @@
 // Created by Prongs on 2021/6/14.
 //
 
-#include <stdlib.h>
+#include <cstdlib>
 #include <cstdio>
 
 typedef struct LNode {
