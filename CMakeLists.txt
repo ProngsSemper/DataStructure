@@ -3,4 +3,4 @@ project(data_structure)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(data_structure List/SqListInsertDelete.cpp List/SqlListSearch.cpp List/LinkList.cpp List/DNode.cpp StackAndQueue/SqStack.cpp StackAndQueue/ShStack.cpp StackAndQueue/ListStack.cpp StackAndQueue/SqQueQue.cpp StackAndQueue/LinkQueQue.cpp Tree/BinaryTreePreMidLast.cpp Tree/ThreadedBinaryTree.cpp)
+add_executable(data_structure List/SqListInsertDelete.cpp List/SqlListSearch.cpp List/LinkList.cpp List/DNode.cpp StackAndQueue/SqStack.cpp StackAndQueue/ShStack.cpp StackAndQueue/ListStack.cpp StackAndQueue/SqQueQue.cpp StackAndQueue/LinkQueQue.cpp Tree/BinaryTreePreInPost.cpp Tree/ThreadedBinaryTree.cpp Tree/ToThreadBinaryTree.cpp)
